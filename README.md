@@ -33,7 +33,7 @@ To build the project for production, execute the following command:
 
 ## Demo
 
-The project is available at: [Project Mesto](http://rinatmujaurov.github.io/mesto-react)
+The project is available at: [Project Mesto](http://rinatmujaurov.github.io/react-mesto-auth)
 
 
 

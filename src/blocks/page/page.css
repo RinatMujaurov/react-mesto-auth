@@ -9,4 +9,8 @@
 	line-height: 22px;
 	color: #fff;
 	position: relative;
+	display: flex;
+	flex-direction: column;
 }
+
+

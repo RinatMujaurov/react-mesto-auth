@@ -39,7 +39,7 @@ function Register(props) {
           required
         />
         <button className="register__submit-button" type="submit">
-          Зарегестрироваться
+          Зарегистрироваться
         </button>
       </form>
       <p className="register__text">

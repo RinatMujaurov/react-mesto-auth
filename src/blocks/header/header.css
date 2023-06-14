@@ -8,10 +8,22 @@
 	align-items: center;
 }
 
+@media (max-width: 899px) {
+	.header {
+		margin: 0 auto;
+		margin-top: 28px;
+		width: 100%;
+		justify-content: space-around;
+	   align-items: center;
+	}
+}
+
 @media (max-width: 679px) {
 	.header {
-		 margin-top: 28px;
-		 padding-bottom: 31px;
-		 max-width: 320px;
+		margin: 0 auto;
+		margin-top: 28px;
+		padding-bottom: 31px;
+		max-width: 320px;
+		justify-content: space-around;
 	}
 }

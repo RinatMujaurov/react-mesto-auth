@@ -4,6 +4,7 @@
 	max-width: 880px;
 }
 
+
 @media (max-width: 679px) {
 	.content {
 		 max-width: 320px;

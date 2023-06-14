@@ -4,7 +4,7 @@ Mesto - a social network for photo sharing and travel.
 
 ## Project Description
 
-The "Mesto" project is an interactive web platform where users can share photos of interesting places, add and remove them, as well as like photos. Users also have the ability to edit their profile and avatar.
+The "Mesto" project is an interactive web platform where users can share photos of interesting places, add and remove them, as well as like photos. Users also have the ability to edit their profile and avatar. Additionally, the platform offers user registration and authentication functionality, allowing users to create an account, log in with their credentials, and access personalized features.  
 
 ## Technologies Used
 

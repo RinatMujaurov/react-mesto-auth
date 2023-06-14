@@ -1,7 +1,45 @@
-# Здесь будет ваш проект на Реакте с авторизацией и регистрацией
+# Project Name
 
-Используйте ваши предыдущие наработки по проекту Mesto. Это может быть работа 11-го спринта или его улучшенная версия после 2-х последних спринтов. 
+Mesto - a social network for photo sharing and travel.
 
-Все запросы на авторизацию, регистрацию и проверку токена должны работать через сервис `https://auth.nomoreparties.co`. Остальные запросы, не относящиеся к этой проектной работе могут быть к бэкенду из предыдущих спринтов.
+## Project Description
 
-Успехов!
+The "Mesto" project is an interactive web platform where users can share photos of interesting places, add and remove them, as well as like photos. Users also have the ability to edit their profile and avatar.
+
+## Technologies Used
+
+- React.js
+- JavaScript
+- HTML
+- CSS
+- REST API
+
+## Build and Run Commands
+
+To install project dependencies, run the following command:
+
+- npm install
+
+
+To start the project in development mode, use the following command: 
+
+- npm start
+
+
+To build the project for production, execute the following command:
+
+- npm build
+
+
+## Demo
+
+The project is available at: [Project Mesto](http://rinatmujaurov.github.io/mesto-react)
+
+
+
+
+
+
+
+
+

@@ -10,12 +10,6 @@ function PopupConfirm(props) {
       onClose={props.onClose}
       onSubmit={props.onSubmit}
     >
-      <button
-        type="submit"
-        className="popup__delete-button"
-      >
-        {props.buttonText}
-      </button>
     </PopupWithForm>
   );
 }

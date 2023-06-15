@@ -14,7 +14,6 @@ function AddPlacePopup(props) {
         link: values.link,
       });
 
-      resetForm();
     }
   }
 

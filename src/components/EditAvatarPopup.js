@@ -1,10 +1,11 @@
-import React, { useRef } from "react";
+import React from "react";
 import PopupWithForm from "./PopupWithForm";
 import useFormAndValidation from "../hooks/useFormAndValidation";
 
 function EditAvatarPopup(props) {
-  const avatarRef = useRef();
-  const { values, handleChange, errors, isValid, setValues, resetForm } = useFormAndValidation();
+  
+  const { values, handleChange, errors, isValid, resetForm } =
+    useFormAndValidation();
 
   React.useEffect(() => {
     if (!props.isOpen) {
@@ -19,8 +20,6 @@ function EditAvatarPopup(props) {
       props.onUpdateAvatar({
         avatar: values.avatar,
       });
-
-      resetForm();
     }
   };
 
@@ -33,27 +32,23 @@ function EditAvatarPopup(props) {
       onSubmit={handleSubmit}
       buttonText="Сохранить"
     >
-      <>
-        <label className="popup__fieldset">
-          <input
-            className="popup__input popup__input_data_link"
-            type="url"
-            id="link-avatar-input"
-            name="avatar"
-            placeholder="Ссылка на аватар"
-            required
-            onChange={handleChange}
-            value={values.avatar || ""}
-            ref={avatarRef}
-          />
-          <span className="popup__input-error link-input-error">
-            {errors.avatar}
-          </span>
-        </label>
-      </>
+      <label className="popup__fieldset">
+        <input
+          className="popup__input popup__input_data_link"
+          type="url"
+          id="link-avatar-input"
+          name="avatar"
+          placeholder="Ссылка на аватар"
+          required
+          onChange={handleChange}
+          value={values.avatar || ""}
+        />
+        <span className="popup__input-error link-input-error">
+          {errors.avatar}
+        </span>
+      </label>
     </PopupWithForm>
   );
 }
 
 export default EditAvatarPopup;
-

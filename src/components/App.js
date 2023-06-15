@@ -55,24 +55,6 @@ function App() {
       .catch((err) => console.log(err));
   }, [isLoggedIn]);
 
-  React.useEffect(() => {
-    api
-      .getUserInfo()
-      .then((data) => {
-        setCurrentUser(data);
-      })
-      .catch((err) => console.log(err));
-  }, []);
-
-  React.useEffect(() => {
-    api
-      .getInitialCards()
-      .then((res) => {
-        setCards([...res]);
-      })
-      .catch((err) => console.log(err));
-  }, []);
-
   function handleEditProfileClick() {
     setIsEditProfilePopupOpen(true);
   }
@@ -159,6 +141,7 @@ function App() {
     setSelectedCard(null);
     setIsOpenTooltip(false);
   }
+
 
   const handleLogin = async (email, password) => {
     try {

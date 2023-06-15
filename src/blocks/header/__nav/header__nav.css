@@ -3,16 +3,30 @@
 }
 
 @media (max-width: 679px) {
+	.header__close-button {
+		margin: 0 auto;
+		padding: 0;
+		width: 20px;
+		height: 20px;
+		border: none;
+		background-image: url(../../../images/popup-close.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-color: rgba(28, 28, 28, 0);
+	}
+
+
 	.header__nav {
 		font-size: 14px;
 		line-height: 17px;
+	
 	}
 
 	.menu-toggle {
 		display: block;
 		/* Добавьте стили для кнопки "бургер" */
-		width: 30px;
-		height: 30px;
+		width: 24px;
+		height: 24px;
 		background-color: transparent;
 		border: none;
 		cursor: pointer;
@@ -33,6 +47,9 @@
 
 	.menu.open {
 		display: flex;
-		/* Добавьте стили для меню */
+		justify-content: center;
+		position: absolute;
+		top: -40%;
 	}
+	
 }

@@ -9,13 +9,9 @@ function Footer() {
   }, []);
 
   return (
-    <>
-      <footer className="footer">
-        <p className="footer__copyright">
-          © {currentYear} Rinat Muzhaurov
-        </p>
-      </footer>
-    </>
+    <footer className="footer">
+      <p className="footer__copyright">© {currentYear} Rinat Muzhaurov</p>
+    </footer>
   );
 }
 

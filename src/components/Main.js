@@ -25,7 +25,7 @@ function Main({
             src={editAvatar}
             alt="edit avatar"
           />
-          <img src={currentUser.avatar} alt="" className="profile__avatar" />
+          <img src={currentUser.avatar} alt="аватар пользователя" className="profile__avatar" />
         </div>
         <div className="profile__info">
           <div className="profile__block">

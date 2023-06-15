@@ -4,37 +4,39 @@ function checkResponse(res) {
   if (res.ok) {
     return res.json();
   }
-  return Promise.reject(`Ошибка${res.status}`);
+  return Promise.reject(`Ошибка ${res.status}`);
 }
-// Регистрация пользователя
+
+function request(url, options) {
+  return fetch(url, options).then(checkResponse);
+}
+
 export const register = (email, password) => {
-  return fetch(`${BASE_URL}/signup`, {
+  return request(`${BASE_URL}/signup`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({ email, password }),
-  }).then(checkResponse);
+  });
 };
 
-// Авторизация пользователя
 export const login = (email, password) => {
-  return fetch(`${BASE_URL}/signin`, {
+  return request(`${BASE_URL}/signin`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({ email, password }),
-  }).then(checkResponse);
+  });
 };
 
-// Проверка токена
 export const checkToken = (token) => {
-  return fetch(`${BASE_URL}/users/me`, {
+  return request(`${BASE_URL}/users/me`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
       Authorization: `Bearer ${token}`,
     },
-  }).then(checkResponse);
+  });
 };
